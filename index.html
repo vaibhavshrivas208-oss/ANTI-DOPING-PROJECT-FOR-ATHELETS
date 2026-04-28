@@ -1,0 +1,327 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CleanSport — Anti-Doping for Athletes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo" onclick="go('home')">
+    <span>&#9889;</span> CLEANSPORT
+  </div>
+  <div class="nav-links">
+    <a onclick="go('about')">About</a>
+    <a onclick="go('education')">Education</a>
+    <a onclick="go('substances')">Prohibited List</a>
+    <a onclick="go('testing')">Testing</a>
+    <a onclick="go('resources')">Resources</a>
+  </div>
+  <button class="nav-btn" onclick="go('testing')">Report Doping</button>
+</nav>
+
+<!-- ===== HOME ===== -->
+<div id="home" class="page active">
+
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=1600&q=80" alt="Athletes" />
+    <div class="hero-content">
+      <div class="hero-tag">Play True. Play Fair.</div>
+      <h1>The True Measure<br>of Greatness</h1>
+      <p>Protecting athletes who win through hard work, dedication, and natural talent — not drugs.</p>
+      <div class="hero-btns">
+        <button class="btn btn-red" onclick="go('education')">Learn the Rules &rarr;</button>
+        <button class="btn btn-outline" style="color:#fff;border-color:rgba(255,255,255,0.3)" onclick="go('substances')">Check Medications</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div class="stats-grid">
+      <div><div class="stat-num">350K+</div><div class="stat-label">Tests Per Year</div></div>
+      <div><div class="stat-num">180+</div><div class="stat-label">Countries</div></div>
+      <div><div class="stat-num">1.2M</div><div class="stat-label">Athletes Educated</div></div>
+    </div>
+  </div>
+
+  <section class="section gray">
+    <div class="container">
+      <h2 style="font-size:clamp(1.6rem,3vw,2.5rem);text-align:center;margin-bottom:12px;">Our Foundation</h2>
+      <p style="text-align:center;color:var(--gray);margin-bottom:48px;max-width:580px;margin-left:auto;margin-right:auto;">Three core pillars that protect clean athletes and ensure a level playing field worldwide.</p>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>Prevention</h3>
+          <p>Value-based education programs targeting athletes from grassroots to elite level.</p>
+          <span class="card-link" onclick="go('education')">Learn more &rarr;</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3>Detection</h3>
+          <p>Intelligent, rigorous in-and-out-of-competition testing backed by advanced science.</p>
+          <span class="card-link" onclick="go('testing')">Learn more &rarr;</span>
+        </div>
+        <div class="card">
+          <div class="card-icon">
+            <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          </div>
+          <h3>Adjudication</h3>
+          <p>Fair, transparent, and independent disciplinary processes protecting athlete rights.</p>
+          <span class="card-link" onclick="go('about')">Learn more &rarr;</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <h2 style="font-size:clamp(1.6rem,3vw,2.5rem);margin-bottom:16px;">The Testing Process</h2>
+          <p style="color:#9CA3AF;margin-bottom:28px;">Know what to expect during a doping control session — your rights and responsibilities.</p>
+          <div class="steps">
+            <div class="step"><div class="step-num">1</div><div><h4>Notification</h4><p>A Doping Control Officer notifies you and explains your rights.</p></div></div>
+            <div class="step"><div class="step-num">2</div><div><h4>Sample Collection</h4><p>Provide a urine and/or blood sample under observation.</p></div></div>
+            <div class="step"><div class="step-num">3</div><div><h4>Lab Analysis</h4><p>Samples go to a WADA-accredited lab for analysis.</p></div></div>
+          </div>
+          <button class="btn btn-white" onclick="go('testing')">Full Testing Guide &rarr;</button>
+        </div>
+        <div class="test-img">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&q=80" alt="Lab testing" style="height:100%;" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial">
+    <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1400&q=80" alt="Athlete" />
+    <div class="testimonial-content">
+      <blockquote>"A medal means nothing if you didn't earn it honestly. Clean sport is about respecting yourself, your competitors, and the spirit of the game."</blockquote>
+      <span class="cite-name">Sarah Jenkins</span>
+      <span class="cite-role">Olympic Gold Medalist, Track &amp; Field</span>
+    </div>
+  </section>
+</div>
+
+<!-- ===== ABOUT ===== -->
+<div id="about" class="page">
+  <div class="page-header">
+    <div class="container">
+      <h1>About CleanSport</h1>
+      <p>We are the independent organization dedicated to protecting clean athletes and preserving the integrity of sport worldwide.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="grid-2">
+        <div>
+          <h2 style="color:var(--red);font-size:clamp(1.4rem,2.5vw,2rem);margin-bottom:16px;">Our Mission</h2>
+          <p style="color:var(--gray);line-height:1.8;margin-bottom:14px;">To lead a collaborative worldwide movement for doping-free sport. Athletes have a fundamental right to compete free from performance-enhancing drugs.</p>
+          <p style="color:var(--gray);line-height:1.8;">Through education, scientific research, and intelligent testing, we aim to eliminate doping and ensure a level playing field for every athlete.</p>
+        </div>
+        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=700&q=80" alt="Athlete preparation" style="height:360px;" />
+      </div>
+    </div>
+  </section>
+  <section class="section gray">
+    <div class="container">
+      <h2 style="font-size:clamp(1.6rem,3vw,2.5rem);text-align:center;margin-bottom:48px;">Our Values</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+          <h3>Integrity</h3>
+          <p>We operate with transparency, honesty, and ethical conduct in all our work.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3>Excellence</h3>
+          <p>World-class scientific research and rigorous testing protocols define our standard.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg></div>
+          <h3>Respect</h3>
+          <p>We respect the rights of every athlete and honor their commitment to clean competition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== EDUCATION ===== -->
+<div id="education" class="page">
+  <div class="page-header">
+    <div class="container">
+      <h1>Education &amp; Prevention</h1>
+      <p>Knowledge is your first line of defense. Understand your rights and responsibilities under the World Anti-Doping Code.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <div class="grid-2" style="margin-bottom:56px;">
+        <div style="border:1px solid rgba(220,38,38,0.2);background:rgba(220,38,38,0.03);padding:32px;">
+          <h3 style="color:var(--red);margin-bottom:14px;">Strict Liability</h3>
+          <p style="color:var(--gray);line-height:1.7;margin-bottom:10px;">You are responsible for <em>any</em> prohibited substance found in your body — regardless of how it got there.</p>
+          <p style="font-weight:700;">"I didn't know" is not a valid defense.</p>
+        </div>
+        <div style="border:1px solid var(--border);padding:32px;">
+          <h3 style="color:var(--red);margin-bottom:14px;">The WADA Code</h3>
+          <p style="color:var(--gray);line-height:1.7;margin-bottom:16px;">The World Anti-Doping Code harmonizes anti-doping policies across all sports organizations globally.</p>
+          <a href="#" style="color:var(--red);font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;">&#8595; Download 2024 Code</a>
+        </div>
+      </div>
+      <h2 style="font-size:clamp(1.4rem,2.5vw,2rem);margin-bottom:32px;">E-Learning Modules</h2>
+      <div class="grid-3">
+        <div class="module"><h4>Anti-Doping Basics</h4><div class="dur">30 min &bull; Interactive</div><div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="module"><h4>Supplements &amp; Risks</h4><div class="dur">45 min &bull; Interactive</div><div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="module"><h4>Whereabouts Rules</h4><div class="dur">20 min &bull; Interactive</div><div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="module"><h4>The Testing Process</h4><div class="dur">25 min &bull; Interactive</div><div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="module"><h4>TUE Applications</h4><div class="dur">30 min &bull; Interactive</div><div class="bar"><div class="bar-fill"></div></div></div>
+        <div class="module"><h4>Coaches &amp; Staff</h4><div class="dur">60 min &bull; Interactive</div><div class="bar"><div class="bar-fill"></div></div></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== PROHIBITED LIST ===== -->
+<div id="substances" class="page">
+  <div class="page-header">
+    <div class="container">
+      <h1>Prohibited List</h1>
+      <p>Search medications and substances to check their status under the current WADA Prohibited List.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container" style="max-width:900px;">
+      <div class="search-box">
+        <svg class="search-icon" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        <input type="search" id="search" placeholder="Search substance name or category..." oninput="filterTable()" />
+      </div>
+      <div style="border:1px solid var(--border);overflow:hidden;">
+        <table>
+          <thead><tr><th>Substance</th><th>Category</th><th>Status</th><th>Note</th></tr></thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+      <div class="note"><strong>Disclaimer:</strong> For informational purposes only. Always refer to the official WADA Prohibited List or consult your National Anti-Doping Organization.</div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== TESTING ===== -->
+<div id="testing" class="page">
+  <div class="page-header">
+    <div class="container">
+      <h1>The Testing Process</h1>
+      <p>Transparent, rigorous, and respectful. Know what to expect during a doping control session.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container" style="max-width:800px;">
+      <div style="border-bottom:2px solid var(--red);padding-bottom:12px;margin-bottom:28px;"><h2 style="color:var(--red);font-size:1.6rem;">1. Notification</h2></div>
+      <p style="color:var(--gray);line-height:1.8;margin-bottom:12px;">A Doping Control Officer (DCO) can notify you for a test anytime, anywhere. Show your ID and stay in their sight until the process is complete.</p>
+      <p style="color:var(--gray);line-height:1.8;margin-bottom:48px;">Elite athletes in a Registered Testing Pool must provide a daily 60-minute time slot for whereabouts testing.</p>
+
+      <div style="border-bottom:2px solid var(--red);padding-bottom:12px;margin-bottom:28px;"><h2 style="color:var(--red);font-size:1.6rem;">2. Sample Collection</h2></div>
+      <p style="color:var(--gray);line-height:1.8;margin-bottom:12px;">You choose a sealed collection kit. The sample is split into an 'A' and 'B' bottle — both sealed in front of you.</p>
+      <p style="color:var(--gray);line-height:1.8;margin-bottom:48px;">Urine requires 90mL minimum. Blood is collected by a qualified Blood Collection Officer (BCO).</p>
+
+      <div style="border-bottom:2px solid var(--red);padding-bottom:12px;margin-bottom:28px;"><h2 style="color:var(--red);font-size:1.6rem;">3. Analysis &amp; Results</h2></div>
+      <p style="color:var(--gray);line-height:1.8;margin-bottom:12px;">Declare all medications taken in the last 7 days on the Doping Control Form, then sign to confirm the procedure.</p>
+      <p style="color:var(--gray);line-height:1.8;">Samples are analyzed anonymously at a WADA-accredited lab. If an Adverse Analytical Finding is returned, you will be notified and can request 'B' sample analysis.</p>
+
+      <div style="background:var(--light);border:1px solid var(--border);padding:28px;margin-top:48px;">
+        <h3 style="margin-bottom:14px;">Your Rights During Testing</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;">
+          <li style="color:var(--gray);font-size:0.9rem;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--red);">&bull;</span> Have a representative or interpreter present</li>
+          <li style="color:var(--gray);font-size:0.9rem;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--red);">&bull;</span> Ask for more information about the process</li>
+          <li style="color:var(--gray);font-size:0.9rem;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--red);">&bull;</span> Request modifications if you are a minor or have an impairment</li>
+          <li style="color:var(--gray);font-size:0.9rem;padding-left:16px;position:relative;"><span style="position:absolute;left:0;color:var(--red);">&bull;</span> Document any concerns on the Doping Control Form</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ===== RESOURCES ===== -->
+<div id="resources" class="page">
+  <div class="page-header">
+    <div class="container">
+      <h1>Resources &amp; Support</h1>
+      <p>Essential documents, forms, and links to support clean athletes and their support personnel.</p>
+    </div>
+  </div>
+  <section class="section">
+    <div class="container">
+      <h2 style="font-size:clamp(1.3rem,2.5vw,1.8rem);border-bottom:1px solid var(--border);padding-bottom:14px;margin-bottom:28px;">Therapeutic Use Exemptions (TUE)</h2>
+      <div class="tue-box">
+        <p>If the medication you need is on the Prohibited List, a Therapeutic Use Exemption (TUE) may authorize you to use it legally while competing.</p>
+        <div style="display:flex;gap:14px;flex-wrap:wrap;">
+          <button class="btn btn-red">&#8595; TUE Application Form</button>
+          <button class="btn btn-outline">TUE Guidelines</button>
+        </div>
+      </div>
+      <div class="grid-2">
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:20px;">Key Organizations</h3>
+          <div class="org-item"><h4>World Anti-Doping Agency (WADA)</h4><p>Global independent agency governing anti-doping.</p></div>
+          <div class="org-item"><h4>Court of Arbitration for Sport (CAS)</h4><p>Independent institution for sports-related disputes.</p></div>
+          <div class="org-item"><h4>Global DRO</h4><p>Online drug reference tool for checking medication status.</p></div>
+          <div class="org-item"><h4>International Olympic Committee (IOC)</h4><p>Supreme authority of the Olympic movement.</p></div>
+        </div>
+        <div>
+          <h3 style="font-size:1.1rem;margin-bottom:20px;">FAQs</h3>
+          <div class="faq-item"><h4>What is strict liability?</h4><p>Athletes are responsible for any prohibited substance in their body, regardless of intent.</p></div>
+          <div class="faq-item"><h4>Can I refuse a test?</h4><p>Refusing without compelling justification is an Anti-Doping Rule Violation (ADRV).</p></div>
+          <div class="faq-item"><h4>Are supplements safe?</h4><p>No supplement is 100% safe — they carry a high risk of contamination.</p></div>
+          <div class="faq-item"><h4>How long is a TUE valid?</h4><p>Usually 1–4 years, depending on the medical condition.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo" onclick="go('home')"><span>&#9889;</span> CLEANSPORT</div>
+      <p style="font-size:0.85rem;max-width:240px;line-height:1.6;">Dedicated to preserving the integrity of sports and protecting clean athletes worldwide.</p>
+    </div>
+    <div class="f-col">
+      <h4>Athletes</h4>
+      <a onclick="go('substances')">Prohibited List</a>
+      <a onclick="go('testing')">Testing Process</a>
+      <a onclick="go('resources')">TUE Applications</a>
+      <a onclick="go('education')">E-Learning</a>
+    </div>
+    <div class="f-col">
+      <h4>Organization</h4>
+      <a onclick="go('about')">About Us</a>
+      <a onclick="go('resources')">News &amp; Media</a>
+      <a onclick="go('about')">Contact</a>
+    </div>
+    <div class="f-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Cookie Policy</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span id="yr"></span>
+    <span>Compete with integrity.</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="https://replit-cdn.com/replit-pill/replit-pill.global.js" data-repl-id="93e96f59-9342-4471-a88b-a037a4257f02"></script></body>
+</html>
